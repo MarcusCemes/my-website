@@ -1,3 +1,4 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
 const { neutral } = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
@@ -7,6 +8,9 @@ module.exports = {
         extend: {
             colors: {
                 gray: neutral,
+            },
+            fontFamily: {
+                inter: ["Inter", ...fontFamily.sans],
             },
         },
     },
